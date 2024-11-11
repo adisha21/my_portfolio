@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditi Sharma - Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Sidebar with Profile Information -->
+  <aside class="sidebar">
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="./images/avatar-2.png" alt="Aditi Sharma" width="80">
+      </figure>
+      <div class="info-content">
+        <h1 class="name">Aditi Sharma</h1>
+        <p class="title">Aspiring Software Developer</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Section Headings as Tabs -->
+    <nav class="section-tabs">
+      <ul>
+        <li data-nav-link="home" class="active">About Me</li>
+        <li data-nav-link="education">Education</li>
+        <li data-nav-link="projects">Projects</li>
+        <li data-nav-link="contact">Contact</li>
+      </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="main-content">
+
+      <!-- About Me Page -->
+      <section data-page="home" style="display: block;">
+        <article class="about">
+          <header><h2>About Me</h2></header>
+          <section class="about-text">
+            <p>Aspiring software developer with a strong foundation in Java, C, and Python. Experienced in web development
+               and artificial intelligence, with a focus on building responsive interfaces and AI-driven applications.</p>
+          </section>
+        </article>
+      </section>
+
+      <!-- Education Page -->
+      <section data-page="education" style="display: none;">
+        <article class="education">
+          <header><h2>Education</h2></header>
+          <section class="education-content">
+            <h3>Dr. Ambedkar Institute of Technology, Bangalore</h3>
+            <p>Bachelor of Engineering in Computer Science and Engineering<br>
+               Dec. 2021 – Aug. 2025 | CGPA: 8.53</p>
+            <h3>Jawahar Navodaya Vidyalaya, Kathua</h3>
+            <p>Senior Secondary (CBSE), Science Stream<br>
+               Apr. 2014 – May 2021 | Percentage: 94.8%</p>
+          </section>
+        </article>
+        <article class="certifications">
+          <header><h2>Certifications</h2></header>
+          <section class="certification-content">
+            <p>AI with Python Training - Coincent (May 2022 – June 2022)</p>
+            <p>Programming in Java - NPTEL (Jan. 2024 – April 2024)</p>
+            <p>Spring Framework 6 and Spring Boot 3 - Udemy (Oct. 2024 – Present)</p>
+          </section>
+        </article>
+      </section>
+
+      <!-- Projects Page -->
+      <section data-page="projects" style="display: none;">
+        <article class="projects">
+          <header><h2>Projects</h2></header>
+          <section class="projects-content">
+            <h3>Mask Detection System | Python, AI, OpenCV</h3>
+            <p>Developed a real-time mask detection system using AI and Python.</p>
+            <h3>YouTube Interface Clone | HTML, CSS</h3>
+            <p>Recreated YouTube’s interface with responsive design and UI accuracy.</p>
+            <h3>Food Calorie Estimation | Python, AI, TensorFlow, Keras, Streamlit</h3>
+            <p>Built a CNN model to estimate food calorie content from images, with a Streamlit interface.</p>
+          </section>
+        </article>
+      </section>
+
+  
+      
+
+      <!-- Contact Page -->
+      <section data-page="contact" style="display: none;">
+        <article class="contact">
+          <header><h2>Contact</h2></header>
+          <section class="contact-content">
+            <p>Email: <a href="mailto:aditisharma3118@gmail.com">aditisharma3118@gmail.com</a></p>
+            <p>Phone: <a href="tel:+916005199217">+91 6005199217</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aditi-sharma3118/">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/adi_sha21">GitHub Profile</a></p>
+
+            <!-- Coding Profiles Section -->
+            <h3>Coding Profiles</h3>
+            <ul class="coding-profiles">
+              <li><a href="https://takeuforward.org/plus/profile/adi_sha21" target="_blank">Take U Forward</a></li>
+              <li><a href="https://leetcode.com/u/adi_sha21/" target="_blank">LeetCode</a></li>
+              <li><a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank">Naukri Profile</a></li>
+              <li><a href="https://unstop.com/u/adi_sha21" target="_blank">Unstop</a></li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+
+    </div>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
