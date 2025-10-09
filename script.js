@@ -8,9 +8,15 @@ navLinks.forEach(link => {
   link.addEventListener("click", () => {
     const targetPage = link.getAttribute("data-nav-link");
 
-    // Show the selected page and hide others
+    // Hide all pages smoothly
     pages.forEach(page => {
-      page.style.display = page.getAttribute("data-page") === targetPage ? "block" : "none";
+      page.style.opacity = "0";
+      setTimeout(() => {
+        page.style.display = page.getAttribute("data-page") === targetPage ? "block" : "none";
+        if (page.style.display === "block") {
+          setTimeout(() => (page.style.opacity = "1"), 50);
+        }
+      }, 200);
     });
 
     // Update active link styling
