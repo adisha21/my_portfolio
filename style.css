@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
 }
 
+/* Main Container */
 main {
   display: flex;
   flex-direction: column;
@@ -76,12 +77,15 @@ main {
   color: #ffffff;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   border-radius: 5px;
+  font-weight: 500;
 }
 
-.section-tabs li.active, .section-tabs li:hover {
+.section-tabs li.active,
+.section-tabs li:hover {
   background-color: #00b894;
+  transform: scale(1.05);
 }
 
 /* Main Content Styling */
@@ -119,9 +123,23 @@ article:hover {
 .education-content p,
 .certification-content p,
 .projects-content p,
-.contact-content p {
+.contact-content p,
+.experience-content p {
   margin-bottom: 12px;
   line-height: 1.7;
+  color: #636e72;
+}
+
+/* Experience Section List Styling */
+.experience-content ul {
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #2d3436;
+}
+
+.experience-content li {
+  margin-bottom: 8px;
+  line-height: 1.6;
   color: #636e72;
 }
 
@@ -156,4 +174,29 @@ article:hover {
 .coding-profiles a:hover {
   text-decoration: underline;
   color: #00b894;
+}
+
+/* ---------- Smooth Page Transitions ---------- */
+[data-page] {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Default visible page */
+[data-page="home"] {
+  display: block;
+  opacity: 1;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
