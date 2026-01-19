@@ -1,10 +1,11 @@
-/* General Reset and Styling */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= BODY ================= */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #e6e9f0;
@@ -15,7 +16,7 @@ body {
   min-height: 100vh;
 }
 
-/* Main Container */
+/* ================= MAIN CONTAINER ================= */
 main {
   display: flex;
   flex-direction: column;
@@ -25,10 +26,10 @@ main {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   overflow: hidden;
-  animation: fadeIn 0.5s ease-in;
+  animation: fadeIn 0.6s ease-in;
 }
 
-/* Sidebar Styles */
+/* ================= SIDEBAR ================= */
 .sidebar {
   background-color: #2d3436;
   color: #ffffff;
@@ -37,30 +38,30 @@ main {
   width: 250px;
 }
 
-.sidebar .avatar-box img {
+.avatar-box img {
   border-radius: 50%;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
-.sidebar .avatar-box img:hover {
-  transform: scale(1.05);
+.avatar-box img:hover {
+  transform: scale(1.08);
 }
 
-.sidebar .name {
+.name {
   font-size: 1.8rem;
   font-weight: bold;
   color: #f9ca24;
 }
 
-.sidebar .title {
-  font-size: 1.2rem;
+.title {
+  font-size: 1.1rem;
   color: #dfe6e9;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
-/* Section Tabs Navigation */
+/* ================= NAV TABS ================= */
 .section-tabs {
   width: 100%;
   background-color: #2d3436;
@@ -77,48 +78,50 @@ main {
   color: #ffffff;
   padding: 10px 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.25s ease;
 }
 
-.section-tabs li.active,
-.section-tabs li:hover {
+.section-tabs li:hover,
+.section-tabs li.active {
   background-color: #00b894;
-  transform: scale(1.05);
+  transform: translateY(-2px);
 }
 
-/* Main Content Styling */
+/* ================= MAIN CONTENT ================= */
 .main-content {
   flex: 1;
   padding: 30px;
   background-color: #ffffff;
 }
 
+/* ================= HEADINGS ================= */
 h2 {
   color: #2d3436;
   font-size: 1.6rem;
-  margin-top: 0;
   margin-bottom: 15px;
   border-bottom: 2px solid #00b894;
   display: inline-block;
   padding-bottom: 5px;
 }
 
+/* ================= CARD STYLE ================= */
 article {
   margin-bottom: 25px;
-  padding-top: 5px;
-  padding-bottom: 15px;
+  padding: 20px;
   background-color: #f1f2f6;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 article:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
+/* ================= TEXT ================= */
 .about-text p,
 .education-content p,
 .certification-content p,
@@ -130,11 +133,25 @@ article:hover {
   color: #636e72;
 }
 
-/* Experience Section List Styling */
+/* ================= PROJECT CARDS ================= */
+.project-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= EXPERIENCE ================= */
 .experience-content ul {
   margin-left: 20px;
   list-style-type: disc;
-  color: #2d3436;
 }
 
 .experience-content li {
@@ -143,22 +160,21 @@ article:hover {
   color: #636e72;
 }
 
-/* Contact Section Links */
+/* ================= CONTACT ================= */
 .contact-content a {
   color: #0984e3;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .contact-content a:hover {
-  text-decoration: underline;
   color: #00b894;
+  text-decoration: underline;
 }
 
-/* Coding Profiles Styling */
+/* ================= CODING PROFILES ================= */
 .coding-profiles {
   list-style: none;
-  padding: 0;
   margin-top: 15px;
 }
 
@@ -172,28 +188,29 @@ article:hover {
 }
 
 .coding-profiles a:hover {
-  text-decoration: underline;
   color: #00b894;
+  text-decoration: underline;
 }
 
-/* ---------- Smooth Page Transitions ---------- */
+/* ================= PAGE TRANSITIONS ================= */
 [data-page] {
   opacity: 0;
   display: none;
-  transition: opacity 0.3s ease;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Default visible page */
 [data-page="home"] {
   display: block;
   opacity: 1;
+  transform: translateY(0);
 }
 
-/* Fade-in animation */
+/* ================= ANIMATION ================= */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
   }
   to {
     opacity: 1;
