@@ -11,12 +11,13 @@
 
 <body>
 
-  <!-- Sidebar with Profile Information -->
+  <!-- Sidebar -->
   <aside class="sidebar">
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="./avatar-2.png" alt="Aditi Sharma" width="80">
+        <img src="./avatar-2.png" alt="Aditi Sharma" width="80" class="profile-img">
       </figure>
+
       <div class="info-content">
         <h1 class="name">Aditi Sharma</h1>
         <p class="title">Aspiring Software Developer</p>
@@ -24,114 +25,147 @@
     </div>
   </aside>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main>
 
-    <!-- Section Headings as Tabs -->
+    <!-- Tabs -->
     <nav class="section-tabs">
       <ul>
-        <li data-nav-link="home" class="active">About Me</li>
-        <li data-nav-link="education">Education</li>
-        <li data-nav-link="projects">Projects</li>
-        <li data-nav-link="contact">Contact</li>
+        <li class="nav-item active" data-nav-link="home">About Me</li>
+        <li class="nav-item" data-nav-link="education">Education</li>
+        <li class="nav-item" data-nav-link="projects">Projects</li>
+        <li class="nav-item" data-nav-link="experience">Experience</li>
+        <li class="nav-item" data-nav-link="contact">Contact</li>
       </ul>
     </nav>
 
-    <!-- Page Content -->
+    <!-- Content -->
     <div class="main-content">
 
-      <!-- About Me Page -->
-      <section data-page="home" style="display: block;">
-        <article class="about">
-          <header><h2>About Me</h2></header>
+      <!-- About -->
+      <section class="page section show" data-page="home">
+        <article class="about card">
+          <header>
+            <h2>About Me</h2>
+          </header>
+
           <section class="about-text">
-            <p>Aspiring software developer with a strong foundation in Java, C, and Python. Experienced in web development
-               and artificial intelligence, with a focus on building responsive interfaces and AI-driven applications.</p>
+            <p>
+              Aspiring Software Developer specializing in Java and backend systems, with hands-on experience
+              in full-stack development and AI-driven applications. Passionate about building scalable,
+              user-focused solutions.
+            </p>
           </section>
         </article>
       </section>
 
-      <!-- Education Page -->
-      <section data-page="education" style="display: none;">
-        <article class="education">
+      <!-- Education -->
+      <section class="page section" data-page="education">
+        <article class="education card">
           <header><h2>Education</h2></header>
+
           <section class="education-content">
             <h3>Dr. Ambedkar Institute of Technology, Bangalore</h3>
-            <p>Bachelor of Engineering in Computer Science and Engineering<br>
-               2021 – 2025 | CGPA: 8.88</p>
+            <p>B.E. in Computer Science & Engineering<br>
+              <span>2021 – 2025 | CGPA: 8.88</span>
+            </p>
+
             <h3>Jawahar Navodaya Vidyalaya, Kathua</h3>
-            <p>Senior Secondary (CBSE), Science Stream<br>
-               2020 – 2021 | Percentage: 94.8%</p>
+            <p>Senior Secondary (CBSE), Science<br>
+              <span>2020 – 2021 | 94.8%</span>
+            </p>
           </section>
         </article>
-        <article class="certifications">
+
+        <article class="certifications card">
           <header><h2>Certifications</h2></header>
           <section class="certification-content">
-            <p>AI with Python Training - Coincent (May 2022 – June 2022)</p>
-            <p>Programming in Java - NPTEL (Jan. 2024 – April 2024)</p>
-            <p>Spring Framework 6 and Spring Boot 3 - Udemy (Oct. 2024 – Present)</p>
+            <p>AI with Python – Coincent</p>
+            <p>Programming in Java – NPTEL</p>
+            <p>Spring Framework 6 & Spring Boot 3 – Udemy</p>
           </section>
         </article>
       </section>
 
-      <!-- Projects Page -->
-      <section data-page="projects" style="display: none;">
-        <article class="projects">
+      <!-- Projects -->
+      <section class="page section" data-page="projects">
+        <article class="projects card">
           <header><h2>Projects</h2></header>
+
           <section class="projects-content">
-            <h3>Mask Detection System | Python, AI, OpenCV</h3>
-            <p>Developed a real-time mask detection system using AI and Python.</p>
-            <h3>YouTube Interface Clone | HTML, CSS</h3>
-            <p>Recreated YouTube’s interface with responsive design and UI accuracy.</p>
-            <h3>Food Calorie Estimation | Python, AI, TensorFlow, Keras, Streamlit</h3>
-            <p>Built a CNN model to estimate food calorie content from images, with a Streamlit interface.</p>
+            <div class="project-card">
+              <h3>Mask Detection System</h3>
+              <p>Python • AI • OpenCV</p>
+              <p>Real-time face mask detection using computer vision.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>YouTube Interface Clone</h3>
+              <p>HTML • CSS</p>
+              <p>Responsive UI clone focusing on layout accuracy.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>Food Calorie Estimation</h3>
+              <p>Python • TensorFlow • Streamlit</p>
+              <p>CNN-based calorie estimation from food images.</p>
+            </div>
+
+            <div class="project-card">
+              <h3>Trip Itinerary Planner</h3>
+              <p>Python • Flask • HTML • CSS</p>
+              <p>
+                A web-based travel itinerary planner that generates personalized trip plans
+                based on destination, duration, and user preferences. Focused on improving
+                travel planning efficiency and user experience.
+              </p>
+           </div>
+
           </section>
         </article>
       </section>
 
-      <!-- Experience Page -->
-      <section data-page="experience" style="display: none;">
-        <article class="experience">
+      <!-- Experience -->
+      <section class="page section" data-page="experience">
+        <article class="experience card">
           <header><h2>Experience</h2></header>
+
           <section class="experience-content">
-            <h3>Zino Technologies | Implementation Engineer Intern</h3>
+            <h3>Zino Technologies – Implementation Engineer Intern</h3>
             <p><strong>June 2025 – Present</strong></p>
+
             <ul>
-              <li>Currently working as an Implementation Engineer Intern, contributing to the deployment and configuration of client solutions.</li>
-              <li>Collaborating with senior developers and the client support team to identify and resolve integration issues efficiently.</li>
-              <li>Working with Java for backend logic and debugging application workflows to ensure reliable performance.</li>
-              <li>Gaining hands-on experience in software implementation, API integration, and client-side troubleshooting within live environments.</li>
+              <li>Deploying and configuring client solutions.</li>
+              <li>Debugging backend workflows using Java.</li>
+              <li>Supporting API integration and live environments.</li>
+              <li>Collaborating with developers and client teams.</li>
             </ul>
           </section>
         </article>
       </section>
 
-
-      <!-- Contact Page -->
-      <section data-page="contact" style="display: none;">
-        <article class="contact">
+      <!-- Contact -->
+      <section class="page section" data-page="contact">
+        <article class="contact card">
           <header><h2>Contact</h2></header>
+
           <section class="contact-content">
             <p>Email: <a href="mailto:aditisharma3118@gmail.com">aditisharma3118@gmail.com</a></p>
             <p>Phone: <a href="tel:+916005199217">+91 6005199217</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aditi-sharma3118/">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/adi_sha21">GitHub Profile</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/aditi-sharma3118/" target="_blank">Profile</a></p>
+            <p>GitHub: <a href="https://github.com/adi_sha21" target="_blank">Profile</a></p>
 
-            <!-- Coding Profiles Section -->
             <h3>Coding Profiles</h3>
             <ul class="coding-profiles">
               <li><a href="https://takeuforward.org/plus/profile/adi_sha21" target="_blank">Take U Forward</a></li>
               <li><a href="https://leetcode.com/u/adi_sha21/" target="_blank">LeetCode</a></li>
-              <li><a href="https://www.naukri.com/mnjuser/profile?id=&altresid" target="_blank">Naukri Profile</a></li>
               <li><a href="https://unstop.com/u/adi_sha21" target="_blank">Unstop</a></li>
             </ul>
           </section>
         </article>
       </section>
 
-
     </div>
-
   </main>
 
   <script src="./script.js"></script>
