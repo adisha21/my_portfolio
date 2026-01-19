@@ -217,3 +217,22 @@ article:hover {
     transform: translateY(0);
   }
 }
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #00b894;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+  background-color: #019874;
+  transform: translateY(-2px);
+}
+
