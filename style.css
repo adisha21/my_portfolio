@@ -218,21 +218,28 @@ article:hover {
   }
 }
 
-.resume-btn {
+.resume-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.resume-content p {
+  margin-bottom: 12px;
+  color: #636e72;
+}
+
+.resume-link {
   display: inline-block;
-  margin-top: 12px;
-  padding: 8px 16px;
+  padding: 10px 18px;
   background-color: #00b894;
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.95rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.resume-btn:hover {
+.resume-link:hover {
   background-color: #019874;
   transform: translateY(-2px);
 }
-
