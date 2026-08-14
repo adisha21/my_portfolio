@@ -109,26 +109,37 @@
     return true;
   }
 
-  /* ---------------- Certifications ---------------- */
-  function certifications(data) {
-    const items = array(data.items);
-    if (!items.length) return false;
+ /* ---------------- Certifications ---------------- */
+function certifications(data) {
+  const items = array(data.items);
+  if (!items.length) return false;
 
-    const target = $('#certifications-content');
-    if (!target) return true;
+  const target = $('#certifications-content');
+  if (!target) return true;
 
-    target.innerHTML = `
-      <div class="cert-list">
-        ${items.map((item) => `
-          <article class="cert-item reveal">
-            <span class="cert-badge" aria-hidden="true">&#10003;</span>
+  target.innerHTML = `
+    <div class="cert-list">
+      ${items.map((item) => `
+        <article class="cert-item reveal">
+          <span class="cert-badge" aria-hidden="true">&#10003;</span>
+          <div class="cert-content">
             <p>${esc(item.title)}${item.issuer ? ` – ${esc(item.issuer)}` : ''}</p>
-          </article>`).join('')}
-      </div>`;
+            ${item.period ? `<small>${esc(item.period)}</small>` : ''}
+            ${item.certificate ? `
+              <a
+                class="btn btn-secondary cert-button"
+                href="${esc(item.certificate)}"
+                target="_blank"
+                rel="noopener noreferrer">
+                View Certificate
+              </a>
+            ` : ''}
+          </div>
+        </article>`).join('')}
+    </div>`;
 
-    return true;
-  }
-
+  return true;
+}
   /* ---------------- Experience ---------------- */
   function experience(data) {
     const items = array(data.items);

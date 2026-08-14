@@ -3,17 +3,20 @@
     {
       "title": "AI with Python Training",
       "issuer": "Coincent",
-      "period": "May 2022 – June 2022"
+      "period": "May 2022 – June 2022",
+      "certificate": "https://drive.google.com/file/d/1ugnI8GYpCSupWCrfrACu9BhNjhImilYP/view?usp=sharing"
     },
     {
       "title": "Programming in Java",
       "issuer": "NPTEL",
-      "period": "January 2024 – April 2024"
+      "period": "January 2024 – April 2024",
+      "certificate": "https://drive.google.com/file/d/1iz_3et0hFyqtLTVOnVjKGKIS2iS6yPge/view"
     },
     {
-      "title": "Spring Framework 6 and Spring Boot 3",
-      "issuer": "Udemy",
-      "period": "October 2024 – Present"
+      "title": "Java Full Stack with React JS",
+      "issuer": "Brainovision Solutions",
+      "period": "2 December 2024 – 22 December 2024",
+      "certificate": "https://drive.google.com/file/d/1Tl8G62oWu1vQUJUXirUScUdMVKA1F5WH/view"
     }
   ]
 }
