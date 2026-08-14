@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "mask-detection-system",
+      "title": "Mask Detection System",
+      "icon": "👀",
+      "technologies": ["Python", "AI", "OpenCV"],
+      "description": "Real-time face mask detection using computer vision.",
+      "date": "2024-03-01",
+      "image": "https://via.placeholder.com/800x450/00b894/ffffff?text=Mask+Detection",
+      "details": "This project implements a real-time face mask detection system using computer vision and deep learning. The system can detect whether people are wearing masks correctly, incorrectly, or not at all."
+    },
+    {
+      "id": "youtube-interface-clone",
+      "title": "YouTube Interface Clone",
+      "icon": "🎥",
+      "technologies": ["HTML", "CSS"],
+      "description": "Responsive UI clone focusing on layout accuracy.",
+      "date": "2024-01-10",
+      "image": "https://via.placeholder.com/800x450/00b894/ffffff?text=YouTube+Clone",
+      "details": "A pixel-perfect responsive clone of YouTube's interface, demonstrating advanced CSS layout techniques including flexbox and grid. The project focuses on maintaining layout accuracy across different screen sizes."
+    },
+    {
+      "id": "food-calorie-estimation",
+      "title": "Food Calorie Estimation",
+      "icon": "🍟",
+      "technologies": ["Python", "TensorFlow", "Streamlit"],
+      "description": "CNN-based calorie estimation from food images.",
+      "date": "2024-06-15",
+      "image": "https://via.placeholder.com/800x450/00b894/ffffff?text=Food+Calorie+Estimation",
+      "details": "An AI-powered application that estimates calorie content from food images using convolutional neural networks. Built with TensorFlow and deployed using Streamlit for an interactive web interface."
+    },
+    {
+      "id": "trip-itinerary-planner",
+      "title": "Trip Itinerary Planner",
+      "icon": "🌎",
+      "technologies": ["Python", "Flask", "HTML", "CSS"],
+      "description": "A web-based travel itinerary planner that generates personalized trip plans based on destination, duration, and user preferences — focused on improving travel planning efficiency and user experience.",
+      "date": "2024-10-20",
+      "image": "https://via.placeholder.com/800x450/00b894/ffffff?text=Trip+Planner",
+      "details": "A comprehensive web-based travel itinerary planner built with Flask. The application generates personalized trip plans based on user preferences including destination, duration, budget, and interests, streamlining the travel planning process."
+    }
+  ]
+}

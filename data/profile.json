@@ -1,0 +1,24 @@
+{
+  "name": "Aditi Sharma",
+  "initials": "AS",
+  "greeting": "Hello, I'm",
+  "role": "Aspiring Software Developer",
+  "tagline": "A software developer with a strong foundation in Java and experience in full-stack development and AI-driven applications, passionate about building scalable, user-focused solutions.",
+  "avatar": "avatar-2.png",
+  "avatarAlt": "Portrait of Aditi Sharma",
+  "resume": {
+    "label": "View Resume",
+    "file": "aditisharmaa.pdf"
+  },
+  "about": {
+    "heading": "About Me",
+    "paragraphs": [
+      "Aspiring Software Developer with a strong foundation in Java and experience in full-stack development and AI-driven applications. Passionate about building scalable, user-focused solutions.",
+      "My journey spans building intelligent computer-vision tools, RESTful web applications, and responsive interfaces — always focused on writing clean, maintainable code and learning new technologies along the way."
+    ]
+  },
+  "meta": {
+    "title": "Aditi Sharma - Portfolio",
+    "description": "Portfolio of Aditi Sharma — Aspiring Software Developer specializing in full-stack development and AI-driven applications."
+  }
+}

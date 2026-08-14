@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "institution": "Dr. Ambedkar Institute of Technology, Bangalore",
+      "degree": "B.E. in Computer Science & Engineering",
+      "period": "2021 – 2025",
+      "badge": "CGPA: 8.88"
+    },
+    {
+      "institution": "Jawahar Navodaya Vidyalaya, Kathua",
+      "degree": "Senior Secondary (CBSE), Science",
+      "period": "2020 – 2021",
+      "badge": "94.8%"
+    }
+  ]
+}

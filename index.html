@@ -1,192 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Aditi Sharma — Aspiring Software Developer specializing in full-stack development and AI-driven applications.">
   <title>Aditi Sharma - Portfolio</title>
-  
+
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./avatar-2.png" type="image/png">
 </head>
 
 <body>
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="sidebar-info">
-      <figure class="avatar-box">
-        <img src="./avatar-2.png" alt="Aditi Sharma" width="80" class="profile-img">
-      </figure>
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-      <div class="info-content">
-        <h1 class="name">Aditi Sharma</h1>
-        <p class="title">Aspiring Software Developer</p>
-      </div>
-    </div>
-  </aside>
+  <!-- ================= NAVBAR =================
+       Static chrome. Content (brand name, etc.) is injected
+       from data/profile.json by js/renderers.js. -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="brand" aria-label="Aditi Sharma, back to top">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span class="brand-name" id="brand-name">Aditi Sharma</span>
+      </a>
 
-  <!-- Main -->
-  <main>
-
-    <!-- Tabs -->
-    <nav class="section-tabs">
-      <ul>
-        <li class="nav-item active" data-nav-link="home">About Me</li>
-        <li class="nav-item" data-nav-link="education">Education</li>
-        <li class="nav-item" data-nav-link="projects">Projects</li>
-        <li class="nav-item" data-nav-link="experience">Experience</li>
-        <li class="nav-item" data-nav-link="contact">Contact</li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link" aria-current="true">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="menu-bar" aria-hidden="true"></span>
+          <span class="menu-bar" aria-hidden="true"></span>
+          <span class="menu-bar" aria-hidden="true"></span>
+        </button>
+      </div>
     </nav>
+  </header>
 
-    <!-- Content -->
-    <div class="main-content">
+  <main id="main-content">
 
-      <!-- About -->
-      <section class="page section show" data-page="home">
-        <article class="about card">
-          <header>
-            <h2>About Me</h2>
-          </header>
+    <!-- ================= HOME / HERO ================= -->
+    <section class="hero section" id="home" aria-label="Introduction">
+      <div id="hero-content"></div>
+    </section>
 
-          <section class="about-text">
-            <p>
-              Aspiring Software Developer with a strong foundation in Java and experience in full-stack development and AI-driven applications. 
-              Passionate about building scalable, user-focused solutions.
-            </p>
-          </section>
-        </article>
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading reveal">
+        <h2 id="about-heading">About Me</h2>
+        <p>Who I am and what I do</p>
+      </div>
+      <div id="about-content"></div>
+    </section>
 
-        <article class="resume-section card">
-        <header>
-          <h2>Resume</h2>
-        </header>
-      
-        <section class="resume-content">
-          <p>
-            You can view my resume to learn more about my skills, experience, and projects.
-          </p>
-      
-          <a href="./aditisharmaa.pdf" target="_blank" class="resume-link">
-            View Resume
-          </a>
-        </section>
-        </article>
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="section-heading reveal">
+        <h2 id="skills-heading">Skills</h2>
+        <p>Technologies and tools I work with</p>
+      </div>
+      <div id="skills-content"></div>
+    </section>
 
-      </section>
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="section-heading reveal">
+        <h2 id="education-heading">Education</h2>
+        <p>Academic background</p>
+      </div>
+      <div id="education-content"></div>
+    </section>
 
-      <!-- Education -->
-      <section class="page section" data-page="education">
-        <article class="education card">
-          <header><h2>Education</h2></header>
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="section" id="certifications" aria-labelledby="certifications-heading">
+      <div class="section-heading reveal">
+        <h2 id="certifications-heading">Certifications</h2>
+        <p>Professional credentials</p>
+      </div>
+      <div id="certifications-content"></div>
+    </section>
 
-          <section class="education-content">
-            <h3>Dr. Ambedkar Institute of Technology, Bangalore</h3>
-            <p>B.E. in Computer Science & Engineering<br>
-              <span>2021 – 2025 | CGPA: 8.88</span>
-            </p>
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="section-heading reveal">
+        <h2 id="projects-heading">Projects</h2>
+        <p>Things I've built</p>
+      </div>
+      <div id="projects-content"></div>
+    </section>
 
-            <h3>Jawahar Navodaya Vidyalaya, Kathua</h3>
-            <p>Senior Secondary (CBSE), Science<br>
-              <span>2020 – 2021 | 94.8%</span>
-            </p>
-          </section>
-        </article>
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
+      <div class="section-heading reveal">
+        <h2 id="experience-heading">Experience</h2>
+        <p>Where I've worked</p>
+      </div>
+      <div id="experience-content"></div>
+    </section>
 
-        <article class="certifications card">
-          <header><h2>Certifications</h2></header>
-          <section class="certification-content">
-            <p>AI with Python – Coincent</p>
-            <p>Programming in Java – NPTEL</p>
-            <p>Java full stack with React js  – Brainovision Solutions</p>
-          </section>
-        </article>
-      </section>
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-heading reveal">
+        <h2 id="contact-heading">Contact</h2>
+        <p>Let's work together</p>
+      </div>
 
-      <!-- Projects -->
-      <section class="page section" data-page="projects">
-        <article class="projects card">
-          <header><h2>Projects</h2></header>
+      <div class="contact-layout">
+        <div id="contact-info"></div>
 
-          <section class="projects-content">
-            <div class="project-card">
-              <h3>Mask Detection System</h3>
-              <p>Python • AI • OpenCV</p>
-              <p>Real-time face mask detection using computer vision.</p>
-            </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+            <p class="form-error" id="name-error" aria-live="polite"></p>
+          </div>
 
-            <div class="project-card">
-              <h3>YouTube Interface Clone</h3>
-              <p>HTML • CSS</p>
-              <p>Responsive UI clone focusing on layout accuracy.</p>
-            </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+            <p class="form-error" id="email-error" aria-live="polite"></p>
+          </div>
 
-            <div class="project-card">
-              <h3>Food Calorie Estimation</h3>
-              <p>Python • TensorFlow • Streamlit</p>
-              <p>CNN-based calorie estimation from food images.</p>
-            </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <p class="form-error" id="message-error" aria-live="polite"></p>
+          </div>
 
-            <div class="project-card">
-              <h3>Trip Itinerary Planner</h3>
-              <p>Python • Flask • HTML • CSS</p>
-              <p>
-                A web-based travel itinerary planner that generates personalized trip plans
-                based on destination, duration, and user preferences. Focused on improving
-                travel planning efficiency and user experience.
-              </p>
-           </div>
-
-          </section>
-        </article>
-      </section>
-
-      <!-- Experience -->
-      <section class="page section" data-page="experience">
-        <article class="experience card">
-          <header><h2>Experience</h2></header>
-
-          <section class="experience-content">
-            <h3>Zino Technologies – Implementation Engineer Intern</h3>
-            <p><strong>June 2025 – October 2025</strong></p>
-
-            <ul>
-              <li>Deploying and configuring client solutions based on business requirements.</li>
-              <li>Supporting and validating Python-based APIs during implementation and integration.</li>
-              <li>Assisting in troubleshooting API workflows and resolving client-side issues.</li>
-              <li>Collaborating with internal teams and clients to ensure smooth deployment in live environments.</li>
-
-            </ul>
-          </section>
-        </article>
-      </section>
-
-      <!-- Contact -->
-      <section class="page section" data-page="contact">
-        <article class="contact card">
-          <header><h2>Contact</h2></header>
-
-          <section class="contact-content">
-            <p>Email: <a href="mailto:aditisharma3118@gmail.com">aditisharma3118@gmail.com</a></p>
-            <p>Phone: <a href="tel:+916005199217">+91 6005199217</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/aditi-sharma3118/" target="_blank">Profile</a></p>
-            <p>GitHub: <a href="https://github.com/adisha21" target="_blank">Profile</a></p>
-
-            <h3>Coding Profiles</h3>
-            <ul class="coding-profiles">
-              <li><a href="https://takeuforward.org/profile/adi_sha21" target="_blank">Take U Forward</a></li>
-              <li><a href="https://leetcode.com/u/adi_sha21/" target="_blank">LeetCode</a></li>
-              <li><a href="https://unstop.com/u/adi_sha21" target="_blank">Unstop</a></li>
-            </ul>
-          </section>
-        </article>
-      </section>
-
-    </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <script src="./script.js"></script>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <p>&copy; <span id="footer-year">2025</span> <span id="footer-name">Aditi Sharma</span>. Built with care.</p>
+    <p class="footer-note">
+      <a href="./aditisharmaa.pdf" target="_blank" rel="noopener">Resume</a>
+      &middot;
+      <a href="#home">Back to top</a>
+    </p>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" aria-hidden="true">
+    &#8593;
+  </button>
+
+  <!-- Data (embedded mirror for file:// fallback, then JS modules) -->
+  <script src="./data/data.js"></script>
+  <script src="./js/core.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/navigation.js"></script>
+  <script src="./js/reveal.js"></script>
+  <script src="./js/forms.js"></script>
+  <script src="./js/projects.js"></script>
+  <script src="./js/renderers.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

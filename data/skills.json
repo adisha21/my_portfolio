@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "title": "Programming Languages",
+      "items": [
+        { "name": "Java", "level": 90 },
+        { "name": "Python", "level": 85 },
+        { "name": "JavaScript", "level": 80 }
+      ]
+    },
+    {
+      "title": "Web Development",
+      "items": [
+        { "name": "HTML & CSS", "level": 90 },
+        { "name": "React", "level": 75 },
+        { "name": "SQL & Databases", "level": 70 }
+      ]
+    },
+    {
+      "title": "AI & Data",
+      "items": [
+        { "name": "Machine Learning", "level": 80 },
+        { "name": "Computer Vision (OpenCV)", "level": 75 },
+        { "name": "TensorFlow", "level": 70 }
+      ]
+    }
+  ]
+}

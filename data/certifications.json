@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title": "AI with Python Training",
+      "issuer": "Coincent",
+      "period": "May 2022 – June 2022"
+    },
+    {
+      "title": "Programming in Java",
+      "issuer": "NPTEL",
+      "period": "January 2024 – April 2024"
+    },
+    {
+      "title": "Spring Framework 6 and Spring Boot 3",
+      "issuer": "Udemy",
+      "period": "October 2024 – Present"
+    }
+  ]
+}
